@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/reset.css">
+    <link rel="stylesheet" href="/public/assets/css/quizz.css">
+    <title>Quizz - TTSF</title>
+</head>
+<body>
+    <section class="main">
+        <h1 class="tittle-resume">Olá <%= name %></h1>
+        <p class="paragraph-resume">Vamos iniciar o quizz</p>
+        <p class="linkDeveloper">Desenvolvido por <a href="https://www.linkedin.com/in/vinicius-soaresdev" target="_blank">Vinicius Soares</a></p>
+        <form class="form">
+            <p class="description">Responda as próximas 5 perguntas</p>
+            <div class="quizzOne  quizzGame">
+                <label for="">Qual o maior artilheiro da história do Botafogo?</label>
+                <input type="text" class="scoreInput">
+                <button class="btn" type="submit">Enviar</button>
+            </div>
+
+            <div class="quizzTwo  quizzGame">
+                <label for="">Qual jogador estrangeiro mais vestiu a camisa do glorioso?</label>
+                <input type="text" class="playerInput">
+                <button class="btnPlayer" type="submit">Enviar</button>
+            </div>
+
+            <div class="quizzThree  quizzGame">
+                <label for="">Qual o adversário o Botafogo enfrentou na partida de acesso a série A em 2003?</label>
+                <input type="text" class="gameInput">
+                <button class="btnGame" type="submit">Enviar</button>
+            </div>
+
+            <div class="quizzFour  quizzGame">
+                <label for="">Em que ano o Botafogo conquistou seu primeiro campeonato Brasileiro?</label>
+                <input type="text" class="yearInput">
+                <button class="btnYear" type="submit">Enviar</button>
+            </div>
+
+            <div class="quizzFive  quizzGame">
+                <label for="">Quantos jogadores o Botafogo forneceu para a seleção Brasileira?</label>
+                <input type="text" class="NumberInput">
+                <button class="btnNumberPlayer" type="submit">Enviar</button>
+            </div>
+
+            <div class="restartquizz">
+                <p>Acertos:</p>
+                <p class="wins"></p>
+                <p>Erros:</p>
+                <p class="fails"></p>
+                <a href="/">Reiniciar</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="../public/assets/js/quizz.js"></script>
+</body>
+</html>

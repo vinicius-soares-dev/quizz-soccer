@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@200;300;400;500;600&family=Roboto:wght@100;300;500;700&display=swap');
+
+:root {
+    --font-main: 'Montserrat', sans-serif;
+    --font-secundary: 'Dancing Script', cursive;
+    --color-background: #1F2024;
+    --color-main: #A68F97;
+    --color-emphasis: #004F4D; 
+}
+
+
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main > .form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.main > h1 {
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-main);
+    text-shadow: 0px 4px 5px #000000;
+    font-size: 2em;
+
+}
+
+.main > p {
+    font-family: var(--font-main);
+    color: var(--color-main);
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.main > .form > label {
+    font-family: var(--font-main);
+    color: #fff;
+    padding: 1em;
+}
+
+.main > .form > .inputName {
+    padding: 1em 0.5em;
+    color: var(--color-background);
+}
+
+.main > .form > .btn {
+    padding: 1em 0.7em;
+    margin-top: 1em;
+    background: var(--color-main);
+    color: var(--color-emphasis);
+    border: none;
+    font-family: var(--font-main);
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main > .form > .btn:hover{
+    background: var(--color-emphasis);
+    color: var(--color-main);
+    transition: 2s;
+}
+
